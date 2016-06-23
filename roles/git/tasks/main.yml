@@ -7,8 +7,11 @@
 - name: Add user email to global config
   command: git config --global user.email "{{ email }}"
 
-- name: Add checkout alias
+- name: Add checkout alias to global config
   command: git config --global alias.co checkout
 
-- name: Add status alias
+- name: Add status alias to global config
   command: git config --global alias.st status
+
+- name: Setup simple push to global config
+  command: git config --global push.default simple
