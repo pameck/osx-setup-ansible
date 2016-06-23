@@ -12,4 +12,4 @@ echo "Installing ansible"
 sudo pip install ansible
 echo "Installing ansible done."
 
-ansible-playbook -i "localhost," -c local main.yml
+ansible-playbook -i "localhost," -c local setup-all-the-things.yml

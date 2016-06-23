@@ -1,0 +1,14 @@
+- name: Install git
+  homebrew_cask: name=git state=present
+
+- name: Add name to global config
+  command: git config --global user.name "{{ name }}"
+
+- name: Add user email to global config
+  command: git config --global user.email "{{ email }}"
+
+- name: Add checkout alias
+  command: git config --global alias.co checkout
+
+- name: Add status alias
+  command: git config --global alias.st status
