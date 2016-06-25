@@ -1,0 +1,5 @@
+- name: Slack
+  homebrew_cask: name=slack state=present
+
+- name: Skype
+  homebrew_cask: name=skype state=present
