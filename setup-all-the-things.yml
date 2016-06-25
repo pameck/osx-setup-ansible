@@ -25,3 +25,4 @@
       - { role: dev-tools }
       - { role: entertainment }
       - { role: productivity }
+      - { role: comms }
