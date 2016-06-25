@@ -1,0 +1,11 @@
+[user]
+        name = {{ name }}
+        email = {{ email }}
+[alias]
+        co = checkout
+        gs = status
+        st = status
+[push]
+        default = simple
+[color]
+  ui = true

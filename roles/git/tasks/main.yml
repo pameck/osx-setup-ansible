@@ -1,17 +1,5 @@
 - name: Install git
   homebrew_cask: name=git state=present
 
-- name: Add name to global config
-  command: git config --global user.name "{{ name }}"
-
-- name: Add user email to global config
-  command: git config --global user.email "{{ email }}"
-
-- name: Add checkout alias to global config
-  command: git config --global alias.co checkout
-
-- name: Add status alias to global config
-  command: git config --global alias.st status
-
-- name: Setup simple push to global config
-  command: git config --global push.default simple
+- name: Add global git congif settings
+  template: src=templates/git_config dest={{home_directory}}/.gitconfig
