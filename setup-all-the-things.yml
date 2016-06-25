@@ -17,11 +17,6 @@
     - name: Tap Homebrew Cask
       command: brew tap caskroom/versions
 
-    - name: Install Sublime
-      homebrew_cask:
-       name: sublime-text
-       state: present
-
   roles:
       - { role: git }
       - { role: basic-tools }

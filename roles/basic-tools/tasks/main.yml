@@ -1,3 +1,6 @@
+- name: Install Sublime
+  homebrew_cask: name=sublime-text state=present
+
 - name: Install Chrome
   homebrew_cask: name=google-chrome state=present
 
@@ -7,5 +10,5 @@
 - name: Install Spectacle
   homebrew_cask: name=spectacle state=present
 
-- name: Install Dashlane
+- name: Install Password Manager (Dashlane)
   homebrew_cask: name=dashlane state=present
