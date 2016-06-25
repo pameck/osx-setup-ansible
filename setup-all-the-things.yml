@@ -23,3 +23,5 @@
       - { role: git }
       - { role: basic-tools }
       - { role: dev-tools }
+      - { role: entertainment }
+      - { role: productivity }

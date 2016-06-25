@@ -1,0 +1,5 @@
+- name: Evernote
+  homebrew_cask: name=evernote state=present
+
+- name: Alfred
+  homebrew_cask: name=alfred state=present

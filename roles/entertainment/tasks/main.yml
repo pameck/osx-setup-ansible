@@ -1,0 +1,5 @@
+- name: Spotify
+  homebrew_cask: name=spotify state=present
+
+- name: Sonos
+  homebrew_cask: name=sonos state=present
