@@ -1,5 +1,5 @@
-# laptop-setup-ansible
-Setting up my laptop with a single script
+# osx-setup-ansible
+Setting up a Mac with a single script
 
 This script has been tested on OSX El Capitan.
 
