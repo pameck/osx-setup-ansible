@@ -2,4 +2,17 @@
   homebrew_cask: name=git state=present
 
 - name: Add global git congif settings
-  template: src=templates/git_config dest={{home_directory}}/.gitconfig
+  template: src=templates/git_config dest={{home_dir}}/.gitconfig
+
+- name: Create bash_profile if it does not exist
+  file: state=touch path={{home_dir}}/.bash_profile
+
+- name: Add aliases to bash_profile
+  blockinfile:
+    dest: "{{home_dir}}/.bash_profile"
+    content: |
+      #Git Alias
+      alias gs='git status'
+      alias gpr='git pull --rebase'
+      alias push='git push'
+      alias gds='git diff --staged'
