@@ -1,0 +1,2 @@
+- name: Install Lightroom
+  homebrew_cask: name=adobe-photoshop-lightroom state=present
