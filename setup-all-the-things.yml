@@ -22,3 +22,4 @@
   roles:
       - { role: git }
       - { role: basic-tools }
+      - { role: dev-tools }
