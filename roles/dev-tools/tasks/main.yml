@@ -1,0 +1,5 @@
+- name: Install iTerm
+  homebrew_cask: name=iterm2 state=present
+
+- name: Install Sublime
+  homebrew_cask: name=sublime-text state=present

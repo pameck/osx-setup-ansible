@@ -1,11 +1,5 @@
-- name: Install Sublime
-  homebrew_cask: name=sublime-text state=present
-
 - name: Install Chrome
   homebrew_cask: name=google-chrome state=present
-
-- name: Install iTerm
-  homebrew_cask: name=iterm2 state=present
 
 - name: Install Spectacle
   homebrew_cask: name=spectacle state=present
