@@ -48,4 +48,7 @@ There is little interaction needed, you will need to input your password in orde
 
 ## Future Work
 
-0. Ask for the password manager preference, instead of defaulting it to Dashlane
+- Ask for the password manager preference, instead of defaulting it to Dashlane
+- Setting up the github sshkey
+- Source bash_profile once created
+- Setting up iTerm2 with my preferences
