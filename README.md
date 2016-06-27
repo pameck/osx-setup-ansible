@@ -13,7 +13,7 @@ $cd laptop-setup-ansible
 
 ## Usage
 ```bash
-$sh setup.sh 
+$sh setup.sh
 ```
 There is little interaction needed, you will need to input your password in order to install pip and ansible.
 
@@ -27,15 +27,17 @@ There is little interaction needed, you will need to input your password in orde
 0. comms
   - Slack
   - Skype
-  
+
 0. dev-tools
   - iTerm2
   - Sublime (Adds a symlink to open files and folders with 'sublime' from the terminal)
+  - VirtualBox
+  - Vagrant
 
 0. git
 
   This role installs git, sets the global config and adds some of my preferred alias to bash_profile. Set your email and name in */defaults/main* for the global git config.
-  
+
 0. entertainment
   - Spotify
   - Sonos
