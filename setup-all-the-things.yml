@@ -20,10 +20,11 @@
       command: brew tap caskroom/versions
 
   roles:
-      - { role: git }
       - { role: basic-tools }
+      - { role: comms }
       - { role: dev-tools }
       - { role: entertainment }
-      - { role: productivity }
-      - { role: comms }
+      - { role: git }
       - { role: lightroom }
+      - { role: mac-preferences }
+      - { role: productivity }

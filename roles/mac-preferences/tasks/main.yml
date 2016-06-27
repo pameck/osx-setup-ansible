@@ -1,0 +1,5 @@
+- name: Enable Tab/Cancel in Mac dialogs
+  shell: defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
+- name: Require password immediately after screen saver begins
+  shell: defaults write com.apple.screensaver askForPassword -int 1
