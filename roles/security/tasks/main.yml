@@ -1,0 +1,5 @@
+- name: Install Password Manager (Dashlane)
+  homebrew_cask: name=dashlane state=present
+
+- name: Thunderdbird
+  homebrew_cask: name=thunderbird state=present
