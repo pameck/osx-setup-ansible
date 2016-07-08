@@ -2,6 +2,8 @@
 - hosts: all
   vars:
     home_dir: "{{ lookup('env', 'HOME') }}"
+    apps_dir: "{{ home_dir }}/Library/Application Support/"
+
   tasks:
     - name: check if homebrew is installed
       command: brew -v

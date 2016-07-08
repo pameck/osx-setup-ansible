@@ -1,0 +1,12 @@
+{
+  "remember_open_files": true,
+  "draw_white_space": "all",
+  "font_size": 12,
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true,
+  "find_selected_text": true,
+  "show_full_path": true,
+  "highlight_line": true,
+  "hot_exit": true
+}
