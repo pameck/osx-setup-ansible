@@ -9,9 +9,9 @@ This script has been tested on OSX El Capitan.
 $ curl -sL https://github.com/pameck/osx-setup-ansible/archive/master.tar.gz | tar xz
 ```
 
-Go to the folder where you downloaded the repository
+Go to the folder of the repository
 ```bash
-$cd laptop-setup-ansible
+$cd osx-setup-ansible
 ```
 
 ## Usage
