@@ -14,4 +14,4 @@
   homebrew_cask: name=vagrant state=present
 
 - name: Configure Sublime preferences
-  template: src=templates/sublime_preferences dest="{{apps_dir}}/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+  template: src=templates/sublime_preferences.j2 dest="{{apps_dir}}/Sublime Text 3/Packages/User/Preferences.sublime-settings"

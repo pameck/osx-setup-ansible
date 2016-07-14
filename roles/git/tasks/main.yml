@@ -2,7 +2,7 @@
   homebrew_cask: name=git state=present
 
 - name: Add global git congif settings
-  template: src=templates/git_config dest={{home_dir}}/.gitconfig
+  template: src=templates/git_config.j2 dest={{home_dir}}/.gitconfig
 
 - name: Create bash_profile if it does not exist
   file: state=touch path={{home_dir}}/.bash_profile
