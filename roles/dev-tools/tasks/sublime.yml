@@ -1,0 +1,8 @@
+- name: Install Sublime
+  homebrew_cask: name=sublime-text state=present
+
+- name: Setup terminal command to open Sublime
+  file: src="/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" dest=/usr/local/bin/sublime state=link
+
+- name: Configure Sublime preferences
+  template: src=templates/sublime_preferences.j2 dest="{{apps_dir}}/Sublime Text 3/Packages/User/Preferences.sublime-settings"

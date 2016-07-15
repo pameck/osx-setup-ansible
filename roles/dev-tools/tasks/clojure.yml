@@ -1,0 +1,2 @@
+- name: LeiningenClojure
+  homebrew: name=leiningen state=present

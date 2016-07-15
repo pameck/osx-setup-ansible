@@ -1,0 +1,16 @@
+#It is currently downloading a fixed version of NVM, it wont work, it will be out of date soon.
+- name: check if nvm is installed
+  stat: path="{{ home_dir }}/.nvm"
+  register: nvm_check
+
+- name: Download NVM installer (version 0.31.2) and creating a temporary file with the installation script
+  get_url: url=https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh dest=/tmp/nvm_installer.sh
+  when: not nvm_check.stat.exists
+
+- name: Execute the nvm installer.sh
+  script: /tmp/nvm_installer.sh
+  when: not nvm_check.stat.exists
+
+- name: Remove the nvm installer.sh
+  file: path=/tmp/nvm_installer.sh state=absent
+  when: not nvm_check.stat.exists
