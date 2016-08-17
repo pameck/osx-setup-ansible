@@ -3,3 +3,6 @@
 
 - name: Install Spectacle
   homebrew_cask: name=spectacle state=present
+
+- name: Install Firefox
+  homebrew_cask: name=firefox state=present

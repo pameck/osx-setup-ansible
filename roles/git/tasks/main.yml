@@ -18,3 +18,4 @@
       alias gds='git diff --staged'
       alias gap='git add -p'
       alias gcm='git commit -m'
+      alias oneline='git log --oneline'
