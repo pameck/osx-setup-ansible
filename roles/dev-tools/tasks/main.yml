@@ -1,12 +1,5 @@
 - name: Install iTerm
   homebrew_cask: name=iterm2 state=present
 
-- name: Install VirtualBox
-  homebrew_cask: name=virtualbox state=present
-
-- name: Install Vagrant
-  homebrew_cask: name=vagrant state=present
-
-- include: clojure.yml
-- include: node.yml
-- include: sublime.yml
+- name: Install Docker 
+  homebrew_cask: name=docker state=present
