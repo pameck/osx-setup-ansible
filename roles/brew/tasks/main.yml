@@ -5,7 +5,7 @@
 
 - name: install homebrew with curl
   shell: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  when: brew_check.rc != -1
+  when: brew_check.rc != 1
 
 - name: Install Homebrew Cask using homebrew
   homebrew:
