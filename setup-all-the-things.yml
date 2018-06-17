@@ -5,6 +5,7 @@
     apps_dir: "{{ home_dir }}/Library/Application Support/"
 
   roles:
+      - { role: brew }
       - { role: basic-tools }
       - { role: comms }
       - { role: dev-tools }
