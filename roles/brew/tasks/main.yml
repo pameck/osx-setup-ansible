@@ -1,0 +1,15 @@
+- name: check if homebrew is installed
+  command: brew -V
+  register: brew_check
+
+- name: install homebrew with curl
+  command: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  when: brew_check.stdout.find('command not found') > -1
+
+- name: Install Homebrew Cask using homebrew
+  homebrew:
+    name: cask
+    state: present
+
+- name: Tap Homebrew Cask
+  command: brew tap caskroom/versions

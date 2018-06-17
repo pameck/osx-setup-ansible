@@ -4,23 +4,6 @@
     home_dir: "{{ lookup('env', 'HOME') }}"
     apps_dir: "{{ home_dir }}/Library/Application Support/"
 
-  tasks:
-    - name: check if homebrew is installed
-      command: brew -v
-      register: brew_check
-
-    - name: install homebrew with curl
-      command: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-      when: brew_check.stdout.find('command not found') > -1
-
-    - name: Install Homebrew Cask using homebrew
-      homebrew:
-       name: cask
-       state: present
-
-    - name: Tap Homebrew Cask
-      command: brew tap caskroom/versions
-
   roles:
       - { role: basic-tools }
       - { role: comms }
