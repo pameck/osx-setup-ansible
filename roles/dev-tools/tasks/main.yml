@@ -3,3 +3,9 @@
 
 - name: Install Docker 
   homebrew_cask: name=docker state=present
+
+- name: Install Zsh
+  homebrew: name=zsh state=present
+
+- name: Install Oh-my-zsh
+  shell: sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
